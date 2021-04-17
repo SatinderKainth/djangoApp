@@ -7,6 +7,9 @@ def index(request):
 def new(request):
     return HttpResponse("placeholder to display a new form to create a new blog")
 
+def show_name(request,name):
+    return HttpResponse(f"Name :{name}")
+
 def create(request):
     return redirect("/")
 
